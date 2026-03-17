@@ -5,39 +5,44 @@ import './App.css'
 import Demo from './component/Demo'
 
 function App() {
+  let a=10;
+  let b=20;
+function name(){
+  return "John";
 
-  return (
-    <div>
-      <h1>React Project</h1>
-      <Employee></Employee>
-      <Example></Example>
-      <Demo></Demo>
-    </div>
-    
-    
-  )
+}
+function calc(a,b,op){
+  if(op=='+'){
+    return "Sum = "+(a+b);
+  }
+  else if(op=='-'){
+    return "Difference = "+(a-b);
+  }
+  if(op!='+' && op!='-'){
+    return "Multiplication = "+(a*b);
+  }
+
+}  
+function table(){
+  
+
 }
 
-function Employee() {
-
   return (
     <div>
-      <h2>This is a compnent</h2>
-    </div>
-    
-    
-  )
-}
-
-function Example() {
-
-  return (
-    <div>
-      <h3>This is an Example</h3>
+      <h1>Introduction</h1>
+      
+      <h2>value of a= {a}</h2>
+      <h2>value of b= {b}</h2>
+      <h1>Use of functions with jsx</h1>
+      <h2>My name is {name()}</h2>
+      <h2>{calc(4,2,'')}</h2>
       
     </div>
     
     
   )
 }
+
+
 export default App
