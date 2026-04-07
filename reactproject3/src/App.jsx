@@ -4,26 +4,46 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
+
 function App() {
-function abc(){
-      alert("Function Called")
-    }
-    
 
-function apple(){
-      alert("You have clicked on Apple Button")
+let data="Demo"
+function updata(){
+  data="Example"
+  alert(data)
+}
+
+
+
+
+function fun(){
+      alert("Example of the Call Function ")
     }
 
-function banana(){
-      alert("You have clicked on Banana Button")
-    }        
+const fruit=(name)=>{
+  alert(name)
+}
+
+const apple=(name)=>{
+  alert(name)
+}
+
+const banana=(name)=>{
+  alert(name)
+}
+
   return (
-    <div>
-      <button1 onClick={abc}>Click </button1>
-      <button2 onClick={apple}> Click Apple </button2>
-      <button3 onClick={banana}> Click Banana</button3>
+    <>
+      <h1>State in React</h1>
+      <h1>(Demo)</h1>
+      <button onClick={updata}>Click to change value</button>
 
-    </div>
+       {/* <h1>Example of Arrow Function</h1>      
+       <button onClick={fun}> Click to call function</button>
+       <button onClick={()=>fruit("First Parameter")}> Click to Arrow function</button>
+       <button onClick={()=>apple("Apple is Clicked")}> Click to Apple function</button>
+       <button onClick={()=>banana("Banana is Clicked")}> Click to Banana function</button> */}
+    </>
     
     
   )
