@@ -7,36 +7,34 @@ import './App.css'
 
 function App() {
 
-let data="Demo"
-function updata(){
-  data="Example"
-  alert(data)
-}
+const [data,setCount]=useState("Hello")
+const [isOn,setisOn]=useState(false);
 
 
 
 
-function fun(){
-      alert("Example of the Call Function ")
+
+
+
+
+function toggleButton(){
+      setisOn(!isOn)
+
     }
 
-const fruit=(name)=>{
-  alert(name)
+function fun(){
+  setCount("bye")
 }
 
-const apple=(name)=>{
-  alert(name)
-}
-
-const banana=(name)=>{
-  alert(name)
-}
 
   return (
     <>
-      <h1>State in React</h1>
-      <h1>(Demo)</h1>
-      <button onClick={updata}>Click to change value</button>
+      <h1>State of variable in React</h1>
+      <h1>(data)</h1>
+      <button onClick={fun}>Change Text</button>
+      <h1>Toggle Button</h1>
+      <h2>Status:{isOn ? "ON":"OFF"}</h2>
+      <button onClick={toggleButton}>{isOn ? "Turn OFF" : "Turn ON"}</button>
 
        {/* <h1>Example of Arrow Function</h1>      
        <button onClick={fun}> Click to call function</button>
