@@ -10,13 +10,6 @@ function App() {
 const [data,setCount]=useState("Hello")
 const [isOn,setisOn]=useState(false);
 
-
-
-
-
-
-
-
 function toggleButton(){
       setisOn(!isOn)
 
